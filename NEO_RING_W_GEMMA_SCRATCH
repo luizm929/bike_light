@@ -1,0 +1,119 @@
+
+//Code can be greatly reduced but I realized this too late. 
+#include <Adafruit_NeoPixel.h>
+#define PIN 0
+Adafruit_NeoPixel Ring = Adafruit_NeoPixel(16, PIN, NEO_GRB + NEO_KHZ800);
+uint32_t RED = Ring.Color(255, 0, 0);
+uint32_t BLUE = Ring.Color(0, 0, 255);
+uint32_t OFF = Ring.Color(0, 0, 0);
+uint32_t WHITE = Ring.Color(255, 255, 255);
+
+
+
+void setup() {
+  Ring.begin();
+  //Ring.setBrightness(60); // 1/3 brightnes
+  Ring.show(); // Initialize all pixels to 'off'
+}
+
+void loop(){
+Ring.setBrightness(120);
+Ring.setPixelColor(15,RED);
+Ring.setPixelColor(14,RED);
+Ring.setPixelColor(13,RED);
+Ring.setPixelColor(12,RED);
+Ring.setPixelColor(11,RED);
+Ring.setPixelColor(10,RED);
+Ring.setPixelColor(9,RED);
+Ring.setPixelColor(8,RED);
+Ring.setPixelColor(7,RED);
+Ring.setPixelColor(6,RED);
+Ring.setPixelColor(5,RED);
+Ring.setPixelColor(4,RED);
+Ring.setPixelColor(3,RED);
+Ring.setPixelColor(2,RED);
+Ring.setPixelColor(1,RED);
+Ring.setPixelColor(0,RED);
+  Ring.show();
+  delay(200);
+  
+  Ring.setPixelColor(15,OFF);
+    Ring.setPixelColor(14,OFF);
+  Ring.setPixelColor(13,OFF);
+  Ring.setPixelColor(12,OFF);
+  Ring.setPixelColor(11,OFF);
+  Ring.setPixelColor(10,OFF);
+  Ring.setPixelColor(9,OFF);
+  Ring.setPixelColor(8,OFF);
+  Ring.setPixelColor(7,OFF);
+  Ring.setPixelColor(6,OFF);
+  Ring.setPixelColor(5,OFF);
+  Ring.setPixelColor(4,OFF);
+  Ring.setPixelColor(3,OFF);
+  Ring.setPixelColor(2,OFF);
+  Ring.setPixelColor(1,OFF);
+  Ring.setPixelColor(0,OFF);
+
+  Ring.show();
+  delay(200);
+  
+  Ring.setBrightness(60);
+Ring.setPixelColor(15,RED);
+Ring.setPixelColor(14,RED);
+Ring.setPixelColor(13,RED);
+Ring.setPixelColor(12,RED);
+Ring.setPixelColor(11,RED);
+Ring.setPixelColor(10,RED);
+Ring.setPixelColor(9,RED);
+Ring.setPixelColor(8,RED);
+Ring.setPixelColor(7,RED);
+Ring.setPixelColor(6,RED);
+Ring.setPixelColor(5,RED);
+Ring.setPixelColor(4,RED);
+Ring.setPixelColor(3,RED);
+Ring.setPixelColor(2,RED);
+Ring.setPixelColor(1,RED);
+Ring.setPixelColor(0,RED);
+  Ring.show();
+  delay(100);
+  
+  Ring.setPixelColor(15,OFF);
+  Ring.setPixelColor(14,OFF);
+  Ring.setPixelColor(13,OFF);
+  Ring.setPixelColor(12,OFF);
+  Ring.setPixelColor(11,OFF);
+  Ring.setPixelColor(10,OFF);
+  Ring.setPixelColor(9,OFF);
+  Ring.setPixelColor(8,OFF);
+  Ring.setPixelColor(7,OFF);
+  Ring.setPixelColor(6,OFF);
+  Ring.setPixelColor(5,OFF);
+  Ring.setPixelColor(4,OFF);
+  Ring.setPixelColor(3,OFF);
+  Ring.setPixelColor(2,OFF);
+  Ring.setPixelColor(1,OFF);
+  Ring.setPixelColor(0,OFF);
+  Ring.show();
+  delay(100);
+
+ Ring.setBrightness(60);
+Ring.setPixelColor(15,RED);
+Ring.setPixelColor(14,RED);
+Ring.setPixelColor(13,RED);
+Ring.setPixelColor(12,RED);
+Ring.setPixelColor(11,RED);
+Ring.setPixelColor(10,RED);
+Ring.setPixelColor(9,RED);
+Ring.setPixelColor(8,RED);
+Ring.setPixelColor(7,RED);
+Ring.setPixelColor(6,RED);
+Ring.setPixelColor(5,RED);
+Ring.setPixelColor(4,RED);
+Ring.setPixelColor(3,RED);
+Ring.setPixelColor(2,RED);
+Ring.setPixelColor(1,RED);
+Ring.setPixelColor(0,RED);
+  Ring.show();
+  delay(100);
+
+}
